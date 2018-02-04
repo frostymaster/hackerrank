@@ -1,4 +1,4 @@
-package com.frostmaster.algorithms.AcmIcpcTeam.OrganizingContainersOfBalls;
+package com.frostmaster.algorithms.OrganizingContainersOfBalls;
 
 import java.util.Arrays;
 import java.util.HashMap;
