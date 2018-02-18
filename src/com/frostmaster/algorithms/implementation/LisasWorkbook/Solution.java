@@ -13,7 +13,6 @@ public class Solution {
         for(int i=0;i<n;i++){
             int chpProb = sc.nextInt();
             int pgNo = noOfPages+1;
-            int count = 0;
             for(int j=1;j<=chpProb;j++){
                 if(j==pgNo)
                     sp++;
