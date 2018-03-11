@@ -1,4 +1,4 @@
-package com.frostmaster.algorithms.sortring.BigSorting;
+package com.frostmaster.algorithms.sorting.BigSorting;
 
 import java.util.Arrays;
 import java.util.Scanner;
