@@ -7,9 +7,9 @@ public class Solution {
 
     static int[] quickSort(int[] arr) {
         int pivot = arr[0];
-        ArrayList<Integer> left = new ArrayList<Integer>();
-        ArrayList<Integer> equal = new ArrayList<Integer>();
-        ArrayList<Integer> right = new ArrayList<Integer>();
+        ArrayList<Integer> left = new ArrayList<>();
+        ArrayList<Integer> equal = new ArrayList<>();
+        ArrayList<Integer> right = new ArrayList<>();
 
         equal.add(pivot);
 
