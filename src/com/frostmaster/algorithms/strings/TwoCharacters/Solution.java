@@ -6,6 +6,7 @@ public class Solution {
 
     static int twoCharaters(String s) {
 
+        return 0;
     }
 
     public static void main(String[] args) {
