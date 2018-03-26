@@ -19,7 +19,7 @@ public class Solution {
         for(int i = 0; i < calorie.length; i++){
             calorie[i] = calorie[i] * (-1);
         }
-        // THAT WAS INSANE 
+        // THAT WAS INSANE
 
         for(int i = 0; i < calorie.length; i++){
             miles = miles + (calorie[i] * (long)Math.pow(2, i));
