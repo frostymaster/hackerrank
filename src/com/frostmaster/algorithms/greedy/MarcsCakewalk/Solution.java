@@ -1,4 +1,4 @@
-package com.frostmaster.greedy.MarcsCakewalk;
+package com.frostmaster.algorithms.greedy.MarcsCakewalk;
 
 import java.util.Arrays;
 import java.util.Scanner;
