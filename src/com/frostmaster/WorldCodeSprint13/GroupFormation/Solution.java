@@ -55,7 +55,7 @@ public class Solution {
                 students.put(student2.name, student2);
                 countStudents(group, student2);
             } else {
-                
+
             }
         }
     }
