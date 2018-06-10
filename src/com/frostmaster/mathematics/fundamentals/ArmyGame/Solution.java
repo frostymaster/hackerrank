@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Solution {
 
     static int gameWithCells(int n, int m) {
-
+        return (n+n%2)*(m+m%2)/4;
     }
 
     private static final Scanner scanner = new Scanner(System.in);

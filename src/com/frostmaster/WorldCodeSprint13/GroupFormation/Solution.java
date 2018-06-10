@@ -8,7 +8,7 @@ public class Solution {
 
      static class Group {
          int f;
-         int s;,
+         int s;
          int t;
          ArrayList<Student> students;
 
@@ -36,7 +36,7 @@ public class Solution {
             Student studentObject = new Student();
             studentObject.grade = Integer.parseInt(studentAndGrade[1]);
             studentObject.name = studentAndGrade[0];
-            students.put(studentAndGrade[0], studentObject));
+            students.put(studentAndGrade[0], studentObject);
         }
 
         for(int i = 0; i < m; i ++){
