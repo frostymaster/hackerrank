@@ -9,36 +9,41 @@ public class Solution {
         String s = in.next();
         String t = in.next();
         int k = in.nextInt();
-
-        int needed = 0;
-
-        if(s.equals(t)) {
-            System.out.println("Yes");
-            return;
-        }
-
-
-        for(int i = 0; i < s.length(); i++){
-            if(i < t.length()){
-                if(s.charAt(i) == t.charAt(i))
-                    continue;
-                if(s.length() > t.length()){
-                    needed = s.length() - i + t.length() - i;
-                    break;
-                }
-                else{
-                    needed = t.length() - i + s.length() - i;
-                    break;
-                }
+        int i;
+        for(i = 0; i < s.length() && i < t.length(); i++) {
+            if(s.charAt(i) != t.charAt(i)) {
+                break;
             }
-            needed = s.length() - i + t.length() - i;
-            break;
         }
 
-        if(needed == k)
+
+        int d = s.length() - i;
+        int a = t.length() - i;
+
+        int p = k - d - a;
+        if(p == 0)
+        {
             System.out.println("Yes");
-        else
+        }
+        else if(p < 0)
+        {
             System.out.println("No");
+        }
+        else
+        {
+            if(p % 2 == 0)
+            {
+                System.out.println("Yes");
+            }
+            else
+            {
+                if(p >= (2 * i))
+                {System.out.println("Yes");}
+                else
+                {System.out.println("No");}
+
+            }
+        }
     }
 
 }
