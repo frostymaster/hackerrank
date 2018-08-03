@@ -9,7 +9,7 @@ public class Solution {
             a2[newLocation] = a[i];
         }
 
-        return a2;
+        return a2; 
     }
 
 }
