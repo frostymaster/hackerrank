@@ -19,7 +19,7 @@ public class SwappingInArray {
             return 0;
         }
         if(swaps == 2){
-            return 1
+            return 1;
         } else {
             return -1;
         }
