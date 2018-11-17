@@ -1,4 +1,4 @@
-package com.frostmaster.algorithms.strings.SpecialPalindromeAgain;
+package com.frostmaster.algorithms.misc.FlippingBits;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -7,14 +7,9 @@ import java.util.Scanner;
 
 public class Solution {
 
-    static long substrCount(int n, String s) {
-        int count = n;
-
-        for(int i = 1; i < s.length() - 1; i++) {
-
-        }
-
-        return count;
+     static long flippingBits(long num){
+         long maxValue = (long) (Math.pow(2,32)-1);
+         return num ^ maxValue;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -22,15 +17,18 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        int n = scanner.nextInt();
+        int q = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        String s = scanner.nextLine();
+        for (int qItr = 0; qItr < q; qItr++) {
+            long n = scanner.nextLong();
+            scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        long result = substrCount(n, s);
+            long result = flippingBits(n);
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+            bufferedWriter.write(String.valueOf(result));
+            bufferedWriter.newLine();
+        }
 
         bufferedWriter.close();
 
